@@ -1,0 +1,1447 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;1,300&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    outline: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* animaciones  */
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0.25;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* media queries */
+@media screen and (min-width:769px){
+    /* estilos generales */
+    /* estilos generales */
+    body{
+        background-image: url("/img/bariloche_fondo.jpg");
+        background-repeat: no-repeat;
+        background-position: inherit;
+        background-size: cover;  
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column
+    }
+
+    header a{
+        cursor: pointer;
+    }
+
+    .header{
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7rem;
+    }
+
+    .navBar{
+        width: 100%;
+    }
+
+    .navLinks{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 2.5rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .linkItem{
+        color: #444444;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .linkItem:hover{
+        text-decoration: none;
+        color: #444444;
+    }
+
+    .button-menu {
+        display: none;
+    }
+
+    .header a img{
+        max-height: 10rem;
+    }
+
+
+    /* estilos para el index.html */
+    
+    .flex{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin: 0.7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 22px;
+        border: 1px;
+        padding: 10px
+    }
+
+    .flexWithAnimation{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin: 0.7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 22px;
+        border: 1px;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        padding: 10px 50px 10px 50px;
+        opacity: 1;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+    }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 10px;
+        overflow: hidden;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flexWithAnimation h2{
+        font-size: 36px;
+        color: #3b75cb;
+    }
+
+    .flexWithAnimation p{
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    .grey{
+        color: #929597;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 36px;
+    }
+
+    .embed-container iframe{
+        width: 700px;
+        height: 550px;
+    }
+
+
+
+    /* estilos para adventuras.html */
+
+    .activities{
+        width: 100%
+    }
+
+    .contenedor{
+        padding: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: white;
+        margin: 0 25px 25px;
+        border-radius: 25px;
+    }    
+
+    .adventure{
+        width: 100%;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        padding: 10px;
+        opacity: 1;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+    }
+
+    .linkAdventure{
+        display: table;
+        height: 100%;
+        width: 100%;
+    }
+
+    .linkAdventure div{
+        height: 228px;
+        display: table-cell;
+        vertical-align: middle;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .linkAdventure div:hover{
+        transition: all 250ms linear;
+        box-shadow: inset 0 0 60px #000;
+        border-radius: 3px;
+    }
+
+    .adventure:hover > a > div > span{
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.54);
+        transition: all 250ms linear;
+    }
+
+    .linkAdventure div h4{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 2px 2px 2px #1e1b2d;
+        color: #fff;
+        text-align: center;
+    }
+
+    .linkAdventure div span{
+        width: 84px;
+        height: 27px;
+        background-color: rgba(0, 0, 0, 0.54);
+        color: rgba(255, 255, 255, 0.8);
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    .adventureBox1{
+        background-image: url("/img/imagenes_actividades/buceo_01.jpg");
+    }
+
+    .adventureBox2{
+        background-image: url("/img/imagenes_actividades/cabalgata_01.jpeg");
+    }
+
+    .adventureBox3{
+        background-image: url("/img/imagenes_actividades/canopy_01.jpg");
+    }
+
+    .adventureBox4{
+        background-image: url("/img/imagenes_actividades/escalada_01.jpg");
+    }
+
+    .adventureBox5{
+        background-image: url("/img/imagenes_actividades/kayak_01.jpg");
+    }
+
+    .adventureBox6{
+        background-image: url("/img/imagenes_actividades/kitesurf_01.jpg");
+    }
+
+    .adventureBox7{
+        background-image: url("/img/imagenes_actividades/mountainBike_01.jpg")
+    }
+
+    .adventureBox8{
+        background-image: url("/img/imagenes_actividades/navegacion_01.jpg");
+    }
+
+    .adventureBox9{
+        background-image: url("/img/imagenes_actividades/parapente_01.jpg");
+    }
+
+    .adventureBox10{
+        background-image: url("/img/imagenes_actividades/pescaDeportiva_01.jpg");
+    }
+
+    .adventureBox11{
+        background-image: url("/img/imagenes_actividades/rafting_01.jpg");
+    }
+
+    .adventureBox12{
+        background-image: url("/img/imagenes_actividades/refugio_01.jpg");
+    }
+
+    .adventureBox13{
+        background-image: url("/img/imagenes_actividades/standUpPaddle_01.jpg");
+    }
+
+    .adventureBox14{
+        background-image: url("/img/imagenes_actividades/standUpRafting_01.jpg");
+    }
+
+    .adventureBox15{
+        background-image: url("/img/imagenes_actividades/trekking_01.jpg");
+    }
+
+    .adventureBox16{
+        background-image: url("/img/imagenes_actividades/canyoning_01.jpg");
+    }
+
+
+
+    /* estilos para galeria.html */
+    .containerImg{
+        display: inline-block;
+        position: relative;
+        height: 38rem;
+        width: auto;
+        background-color: white;
+        margin: 0 20px 10px;
+        border-radius: 20px;
+    }
+
+    .containerImg input{
+        top: 35.5rem;
+        position: relative;
+        height: 2rem;
+        width: 1.5rem;
+    }
+
+    .page{
+        position: absolute;
+        width: 100%;
+        height: 30rem;
+        opacity: 0;
+        transition: opacity 3s;
+        padding: 15px;
+    }
+
+    .page div{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 25px;
+    }
+
+    .page div div{
+        width: 100%;
+        height: 239px;
+        background-position: center center;
+        background-size: cover;
+        border: 3px solid black;
+    }
+
+    .imagen1{
+        background-image: url("/img/imagenes_galeria/1.jpg")
+    }
+
+    .imagen2{
+        background-image: url("/img/imagenes_galeria/2.jpg")
+    }
+
+    .imagen3{
+        background-image: url("/img/imagenes_galeria/3.jpg")
+    }
+
+    .imagen4{
+        background-image: url("/img/imagenes_galeria/4.jpg")
+    }
+
+    .imagen5{
+        background-image: url("/img/imagenes_galeria/5.jpg")
+    }
+
+    .imagen6{
+        background-image: url("/img/imagenes_galeria/6.jpg")
+    }
+
+    .imagen7{
+        background-image: url("/img/imagenes_galeria/7.jpg")
+    }
+
+    .imagen8{
+        background-image: url("/img/imagenes_galeria/8.jpg")
+    }
+
+    .imagen9{
+        background-image: url("/img/imagenes_galeria/9.jpg")
+    }
+
+    .imagen10{
+        background-image: url("/img/imagenes_galeria/10.jpg")
+    }
+
+    .imagen11{
+        background-image: url("/img/imagenes_galeria/11.jpg")
+    }
+
+    .imagen12{
+        background-image: url("/img/imagenes_galeria/12.jpg")
+    }
+
+    .imagen13{
+        background-image: url("/img/imagenes_galeria/13.jpg")
+    }
+
+    .imagen14{
+        background-image: url("/img/imagenes_galeria/14.jpg")
+    }
+
+    .imagen15{
+        background-image: url("/img/imagenes_galeria/15.jpg")
+    }
+
+    .imagen16{
+        background-image: url("/img/imagenes_galeria/16.jpg")
+    }
+
+    .imagen17{
+        background-image: url("/img/imagenes_galeria/17.jpg")
+    }
+
+    .imagen18{
+        background-image: url("/img/imagenes_galeria/18.jpg")
+    }
+
+    .containerImg input[type=radio]:nth-of-type(1):checked ~ .page:nth-of-type(1){
+        opacity: 1;
+    }
+
+    .containerImg input[type=radio]:nth-of-type(2):checked ~ .page:nth-of-type(2){
+        opacity: 1;
+    }
+
+    .containerImg input[type=radio]:nth-of-type(3):checked ~ .page:nth-of-type(3){
+        opacity: 1;
+    }
+
+
+    /* estilos para contacto.html */
+    .form{
+        width: 90%;
+        background-color: lavender;
+        height: auto;
+        padding: 30px;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .mainContact{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        text-align: inherit;
+        align-items: center;
+    }
+
+    #info{
+        margin-top: 10px;
+    }
+
+    /* estilos para los html de cada actividad */
+
+    .activity{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin: 0.7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 22px;
+        border: 1px;
+        padding: 10px;
+    }
+
+    .activity h2{
+        font-size: 28px;
+        color: #3b75cb;
+    }
+
+    .subtitle{
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    .blueSmall{
+        color: #0d539b;
+        font-size: 25px;
+        line-height: 34px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .primaryButton{
+        border: 1px #3b75cb solid;
+        width: 4.5rem;
+        height: 2rem;
+        color: white;
+        background: #3b75cb;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+    p strong{
+        color: #0d539b;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 768px){
+
+    /* estilos generales */
+    body{
+        background-image: url("/img/bariloche_fondo.jpg");
+        background-repeat: no-repeat;
+        background-position: inherit;
+        background-size: cover;  
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column
+    }
+
+    header a{
+        cursor: pointer;
+    }
+
+    .header{
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7rem;
+    }
+
+    .navBar{
+        width: 100%;
+    }
+
+    .navLinks{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 2.5rem;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .linkItem{
+        color: #444444;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .button-menu {
+        display: none;
+    }
+
+    .header a img{
+        max-height: 7rem;
+    }
+
+
+
+    /* estilos para el index.html */
+    
+    .flex{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin: 0.7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 22px;
+        border: 1px;
+        padding: 10px
+    }
+
+    .flexWithAnimation{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin: 0.7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 22px;
+        border: 1px;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        padding: 10px;
+        opacity: 1;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+    }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        margin: 10px;
+    }
+
+    .flexWithAnimation h2{
+        font-size: 36px;
+        color: #3b75cb;
+    }
+
+    .flexWithAnimation p{
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    .grey{
+        color: #929597;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 36px;
+    }
+
+    .embed-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* estilos para adventuras.html */
+
+    .activities{
+        width: 100%
+    }
+
+    .contenedor{
+        padding-left: 15px;
+        padding-right: 15px;
+    }    
+
+    .adventure{
+        width: 100%;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        padding: 10px;
+        opacity: 1;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+    }
+
+    .linkAdventure{
+        display: table;
+        height: 100%;
+        width: 100%;
+        margin: 15px 0 15px 0;
+    }
+
+    .linkAdventure div{
+        height: 325px;
+        display: table-cell;
+        vertical-align: middle;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .linkAdventure div h4{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 2px 2px 2px #1e1b2d;
+        color: #fff;
+        text-align: center;
+    }
+
+    .linkAdventure div span{
+        width: 84px;
+        height: 27px;
+        background-color: rgba(0, 0, 0, 0.54);
+        color: rgba(255, 255, 255, 0.8);
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    .adventureBox1{
+        background-image: url("/img/imagenes_actividades/buceo_01.jpg");
+    }
+
+    .adventureBox2{
+        background-image: url("/img/imagenes_actividades/cabalgata_01.jpeg");
+    }
+
+    .adventureBox3{
+        background-image: url("/img/imagenes_actividades/canopy_01.jpg");
+    }
+
+    .adventureBox4{
+        background-image: url("/img/imagenes_actividades/escalada_01.jpg");
+    }
+
+    .adventureBox5{
+        background-image: url("/img/imagenes_actividades/kayak_01.jpg");
+    }
+
+    .adventureBox6{
+        background-image: url("/img/imagenes_actividades/kitesurf_01.jpg");
+    }
+
+    .adventureBox7{
+        background-image: url("/img/imagenes_actividades/mountainBike_01.jpg")
+    }
+
+    .adventureBox8{
+        background-image: url("/img/imagenes_actividades/navegacion_01.jpg");
+    }
+
+    .adventureBox9{
+        background-image: url("/img/imagenes_actividades/parapente_01.jpg");
+    }
+
+    .adventureBox10{
+        background-image: url("/img/imagenes_actividades/pescaDeportiva_01.jpg");
+    }
+
+    .adventureBox11{
+        background-image: url("/img/imagenes_actividades/rafting_01.jpg");
+    }
+
+    .adventureBox12{
+        background-image: url("/img/imagenes_actividades/refugio_01.jpg");
+    }
+
+    .adventureBox13{
+        background-image: url("/img/imagenes_actividades/standUpPaddle_01.jpg");
+    }
+
+    .adventureBox14{
+        background-image: url("/img/imagenes_actividades/standUpRafting_01.jpg");
+    }
+
+    .adventureBox15{
+        background-image: url("/img/imagenes_actividades/trekking_01.jpg");
+    }
+
+    .adventureBox16{
+        background-image: url("/img/imagenes_actividades/canyoning_01.jpg");
+    }
+
+    .activity div iframe{
+        height: 24rem;
+    }
+
+    /* estilos para galeria.html */
+    .containerImg{
+        display: inline-block;
+        position: relative;
+        height: 197rem;
+        width: auto;
+        padding: 10px;
+    }
+
+    .containerImg input{
+        top: 192.5rem;
+        position: relative;
+        height: 2rem;
+        width: 5rem;
+    }
+
+    .page{
+        position: absolute;
+        width: 94%;
+        height: auto;
+        opacity: 0;
+        transition: opacity 3s;
+        padding: 10px;
+    }
+
+    .page div div{
+        width: 100%;
+        height: 480px;
+        background-position: center center;
+        background-size: cover;
+        margin-bottom: 25px;
+        border: 3px solid black;
+    }
+
+    .imagen1{
+        background-image: url("/img/imagenes_galeria/1.jpg")
+    }
+
+    .imagen2{
+        background-image: url("/img/imagenes_galeria/2.jpg")
+    }
+
+    .imagen3{
+        background-image: url("/img/imagenes_galeria/3.jpg")
+    }
+
+    .imagen4{
+        background-image: url("/img/imagenes_galeria/4.jpg")
+    }
+
+    .imagen5{
+        background-image: url("/img/imagenes_galeria/5.jpg")
+    }
+
+    .imagen6{
+        background-image: url("/img/imagenes_galeria/6.jpg")
+    }
+
+    .imagen7{
+        background-image: url("/img/imagenes_galeria/7.jpg")
+    }
+
+    .imagen8{
+        background-image: url("/img/imagenes_galeria/8.jpg")
+    }
+
+    .imagen9{
+        background-image: url("/img/imagenes_galeria/9.jpg")
+    }
+
+    .imagen10{
+        background-image: url("/img/imagenes_galeria/10.jpg")
+    }
+
+    .imagen11{
+        background-image: url("/img/imagenes_galeria/11.jpg")
+    }
+
+    .imagen12{
+        background-image: url("/img/imagenes_galeria/12.jpg")
+    }
+
+    .imagen13{
+        background-image: url("/img/imagenes_galeria/13.jpg")
+    }
+
+    .imagen14{
+        background-image: url("/img/imagenes_galeria/14.jpg")
+    }
+
+    .imagen15{
+        background-image: url("/img/imagenes_galeria/15.jpg")
+    }
+
+    .imagen16{
+        background-image: url("/img/imagenes_galeria/16.jpg")
+    }
+
+    .imagen17{
+        background-image: url("/img/imagenes_galeria/17.jpg")
+    }
+
+    .imagen18{
+        background-image: url("/img/imagenes_galeria/18.jpg")
+    }
+
+    .containerImg input[type=radio]:nth-of-type(1):checked ~ .page:nth-of-type(1){
+        opacity: 1;
+    }
+
+    .containerImg input[type=radio]:nth-of-type(2):checked ~ .page:nth-of-type(2){
+        opacity: 1;
+    }
+
+    .containerImg input[type=radio]:nth-of-type(3):checked ~ .page:nth-of-type(3){
+        opacity: 1;
+    }
+
+
+    /* estilos para contacto.html */
+    .form{
+        width: 90%;
+        background-color: lavender;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .mainContact{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        text-align: inherit;
+        align-items: center;
+    }
+
+    #info{
+        margin-top: 10px;
+    }
+
+    /* estilos para los html de cada actividad */
+
+    .activity{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin: 0.7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 22px;
+        border: 1px;
+        padding: 10px;
+    }
+
+    .activity h2{
+        font-size: 28px;
+        color: #3b75cb;
+    }
+
+    .subtitle{
+        font-style: italic;
+        font-size: 21px;
+    }
+
+    .textActivity{
+        font-size: 18px;
+    }
+
+    .blueSmall{
+        color: #0d539b;
+        font-size: 25px;
+        line-height: 34px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .primaryButton{
+        border: 1px #3b75cb solid;
+        width: 8.5rem;
+        height: 3rem;
+        color: white;
+        background: #3b75cb;
+        border-radius: 7px;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    p strong{
+        color: #0d539b;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    /* estilos generales */
+    body{
+        background-image: url("/img/bariloche_fondo.jpg");
+        background-repeat: no-repeat;
+        background-position: inherit;
+        background-size: cover;  
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column
+    }
+
+    header a{
+        cursor: pointer;
+    }
+
+    .header{
+        top: 0; left: 0; right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.7rem;
+    }
+
+    .navBar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100%;
+        transition: all 0.2s linear;
+        z-index: 100;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navBar.show{
+        margin-left: 0;
+    }
+
+    .navLinks{
+        background-color: rgb(250, 250, 250);
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .linkItem{
+        margin-top: 2rem;
+        color: #444444;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .button-menu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .button-menu span {
+        width: 37px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #444444;
+        border-radius: 3px;
+        transform-origin: 5px 0px;
+        transition: all 0.2s linear;
+    }
+
+    .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #ffffff;
+      }
+      
+    .button-menu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+      
+    .button-menu.close span:nth-child(3) {
+        display: none;
+    }
+
+    .header a img{
+        max-height: 7rem;
+    }
+
+
+
+    /* estilos para el index.html */
+    
+    .flex{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin: 0.7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 22px;
+        border: 1px;
+        padding: 10px
+    }
+
+    .flexWithAnimation{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin: 0.7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 22px;
+        border: 1px;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        padding: 10px;
+        opacity: 1;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+    }
+
+    .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        margin: 10px;
+    }
+
+    .flexWithAnimation h2{
+        font-size: 36px;
+        color: #3b75cb;
+    }
+
+    .flexWithAnimation p{
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    .grey{
+        color: #929597;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 36px;
+    }
+
+    .embed-container iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+    /* estilos para adventuras.html */
+
+    .activities{
+        width: 100%
+    }
+
+    .contenedor{
+        padding-left: 15px;
+        padding-right: 15px;
+    }    
+
+    .adventure{
+        width: 100%;
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+        padding: 10px;
+        opacity: 1;
+        animation-iteration-count: 1;
+        animation-timing-function: ease-in;
+    }
+
+    .linkAdventure{
+        display: table;
+        height: 100%;
+        width: 100%;
+        margin: 15px 0 15px 0;
+    }
+
+    .linkAdventure div{
+        height: 228px;
+        display: table-cell;
+        vertical-align: middle;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .linkAdventure div h4{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 2px 2px 2px #1e1b2d;
+        color: #fff;
+        text-align: center;
+    }
+
+    .linkAdventure div span{
+        width: 84px;
+        height: 27px;
+        background-color: rgba(0, 0, 0, 0.54);
+        color: rgba(255, 255, 255, 0.8);
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 500;
+        line-height: 27px;
+    }
+
+    .adventureBox1{
+        background-image: url("/img/imagenes_actividades/buceo_01.jpg");
+    }
+
+    .adventureBox2{
+        background-image: url("/img/imagenes_actividades/cabalgata_01.jpeg");
+    }
+
+    .adventureBox3{
+        background-image: url("/img/imagenes_actividades/canopy_01.jpg");
+    }
+
+    .adventureBox4{
+        background-image: url("/img/imagenes_actividades/escalada_01.jpg");
+    }
+
+    .adventureBox5{
+        background-image: url("/img/imagenes_actividades/kayak_01.jpg");
+    }
+
+    .adventureBox6{
+        background-image: url("/img/imagenes_actividades/kitesurf_01.jpg");
+    }
+
+    .adventureBox7{
+        background-image: url("/img/imagenes_actividades/mountainBike_01.jpg")
+    }
+
+    .adventureBox8{
+        background-image: url("/img/imagenes_actividades/navegacion_01.jpg");
+    }
+
+    .adventureBox9{
+        background-image: url("/img/imagenes_actividades/parapente_01.jpg");
+    }
+
+    .adventureBox10{
+        background-image: url("/img/imagenes_actividades/pescaDeportiva_01.jpg");
+    }
+
+    .adventureBox11{
+        background-image: url("/img/imagenes_actividades/rafting_01.jpg");
+    }
+
+    .adventureBox12{
+        background-image: url("/img/imagenes_actividades/refugio_01.jpg");
+    }
+
+    .adventureBox13{
+        background-image: url("/img/imagenes_actividades/standUpPaddle_01.jpg");
+    }
+
+    .adventureBox14{
+        background-image: url("/img/imagenes_actividades/standUpRafting_01.jpg");
+    }
+
+    .adventureBox15{
+        background-image: url("/img/imagenes_actividades/trekking_01.jpg");
+    }
+
+    .adventureBox16{
+        background-image: url("/img/imagenes_actividades/canyoning_01.jpg");
+    }
+
+
+
+    /* estilos para galeria.html */
+    .containerImg{
+        display: inline-block;
+        position: relative;
+        height: 105rem;
+        width: auto;
+        padding: 10px;
+    }
+
+    .containerImg input{
+        top: 101.5rem;
+        position: relative;
+    }
+
+    .page{
+        position: absolute;
+        width: 94%;
+        height: auto;
+        opacity: 0;
+        transition: opacity 3s;
+        padding: 10px;
+    }
+
+    .page div div{
+        width: 100%;
+        height: 239px;
+        background-position: center center;
+        background-size: cover;
+        margin-bottom: 25px;
+        border: 3px solid black;
+    }
+
+    .imagen1{
+        background-image: url("/img/imagenes_galeria/1.jpg")
+    }
+
+    .imagen2{
+        background-image: url("/img/imagenes_galeria/2.jpg")
+    }
+
+    .imagen3{
+        background-image: url("/img/imagenes_galeria/3.jpg")
+    }
+
+    .imagen4{
+        background-image: url("/img/imagenes_galeria/4.jpg")
+    }
+
+    .imagen5{
+        background-image: url("/img/imagenes_galeria/5.jpg")
+    }
+
+    .imagen6{
+        background-image: url("/img/imagenes_galeria/6.jpg")
+    }
+
+    .imagen7{
+        background-image: url("/img/imagenes_galeria/7.jpg")
+    }
+
+    .imagen8{
+        background-image: url("/img/imagenes_galeria/8.jpg")
+    }
+
+    .imagen9{
+        background-image: url("/img/imagenes_galeria/9.jpg")
+    }
+
+    .imagen10{
+        background-image: url("/img/imagenes_galeria/10.jpg")
+    }
+
+    .imagen11{
+        background-image: url("/img/imagenes_galeria/11.jpg")
+    }
+
+    .imagen12{
+        background-image: url("/img/imagenes_galeria/12.jpg")
+    }
+
+    .imagen13{
+        background-image: url("/img/imagenes_galeria/13.jpg")
+    }
+
+    .imagen14{
+        background-image: url("/img/imagenes_galeria/14.jpg")
+    }
+
+    .imagen15{
+        background-image: url("/img/imagenes_galeria/15.jpg")
+    }
+
+    .imagen16{
+        background-image: url("/img/imagenes_galeria/16.jpg")
+    }
+
+    .imagen17{
+        background-image: url("/img/imagenes_galeria/17.jpg")
+    }
+
+    .imagen18{
+        background-image: url("/img/imagenes_galeria/18.jpg")
+    }
+
+    .containerImg input[type=radio]:nth-of-type(1):checked ~ .page:nth-of-type(1){
+        opacity: 1;
+    }
+
+    .containerImg input[type=radio]:nth-of-type(2):checked ~ .page:nth-of-type(2){
+        opacity: 1;
+    }
+
+    .containerImg input[type=radio]:nth-of-type(3):checked ~ .page:nth-of-type(3){
+        opacity: 1;
+    }
+
+
+    /* estilos para contacto.html */
+    .form{
+        width: 90%;
+        background-color: lavender;
+        height: auto;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    .mainContact{
+        display: flex;
+        justify-content: center;
+        height: auto;
+        text-align: inherit;
+        align-items: center;
+    }
+
+    #info{
+        margin-top: 10px;
+    }
+
+    /* estilos para los html de cada actividad */
+
+    .activity{
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        margin: 0.7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        border-radius: 22px;
+        border: 1px;
+        padding: 10px;
+    }
+
+    .activity h2{
+        font-size: 28px;
+        color: #3b75cb;
+    }
+
+    .subtitle{
+        font-style: italic;
+        font-size: 18px;
+    }
+
+    .blueSmall{
+        color: #0d539b;
+        font-size: 25px;
+        line-height: 34px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .primaryButton{
+        border: 1px #3b75cb solid;
+        width: 4.5rem;
+        height: 2rem;
+        color: white;
+        background: #3b75cb;
+        border-radius: 7px;
+        margin-top: 10px;
+    }
+
+    p strong{
+        color: #0d539b;
+        font-weight: 400;
+    }
+        
+}
